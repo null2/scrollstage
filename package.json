@@ -1,0 +1,31 @@
+{
+  "name": "scrollstage",
+  "title": "Scrollstage",
+  "description": "Scrollstage for fontstage.de.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/null2/scrollstage",
+  "author": {
+    "name": "null2 Johannes J. Schmidt",
+    "email": "schmidt@netzmerk.com",
+    "url": "http://null2.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/null2/scrollstage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/null2/scrollstage/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-devserver": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "keywords": []
+}

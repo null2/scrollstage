@@ -1,0 +1,14 @@
+/* Animations for Scene 02-two */
+
+#number-two {
+  -skrollr-animation-name: number-two;
+}
+
+@-skrollr-keyframes number-two {
+  0 {
+    transform: rotate(0deg);
+  }
+  2000 {
+    transform: rotate(360deg);
+  }
+}

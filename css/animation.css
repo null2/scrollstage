@@ -1,0 +1,83 @@
+/* Scrollstage */
+/* Scene Start and Duration */
+/* Animations between Scenes */
+#scene-01-one {
+  -skrollr-animation-name: scene-01; }
+
+#scene-02-two {
+  -skrollr-animation-name: scene-02; }
+
+#scene-03-three {
+  -skrollr-animation-name: scene-03; }
+
+@-skrollr-keyframes scene-01 {
+  0 {
+    top: 0%; }
+
+  1900 {
+    top: 0%; }
+
+  2000 {
+    top: -100%; } }
+
+@-skrollr-keyframes scene-02 {
+  0 {
+    top: 100%; }
+
+  1900 {
+    top: 100%; }
+
+  2000 {
+    top: 0%; }
+
+  3900 {
+    top: 0%; }
+
+  4000 {
+    top: -100%; } }
+
+@-skrollr-keyframes scene-03 {
+  0 {
+    top: 100%; }
+
+  3900 {
+    top: 100%; }
+
+  4000 {
+    top: 0%; }
+
+  6000 {
+    top: 0%; } }
+
+/* Animations for Scene 01-one */
+#number-one {
+  -skrollr-animation-name: number-one; }
+
+@-skrollr-keyframes number-one {
+  0 {
+    transform: rotate(0deg); }
+
+  2000 {
+    transform: rotate(360deg); } }
+
+/* Animations for Scene 02-two */
+#number-two {
+  -skrollr-animation-name: number-two; }
+
+@-skrollr-keyframes number-two {
+  0 {
+    transform: rotate(0deg); }
+
+  2000 {
+    transform: rotate(360deg); } }
+
+/* Animations for Scene 03-three */
+#number-three {
+  -skrollr-animation-name: number-three; }
+
+@-skrollr-keyframes number-three {
+  0 {
+    transform: rotate(0deg); }
+
+  2000 {
+    transform: rotate(360deg); } }

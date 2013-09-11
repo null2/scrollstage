@@ -1,0 +1,66 @@
+/* Scrollstage */
+
+
+/* Scene Start and Duration */
+$scene_01_begin: 0;
+$scene_01_duration: 2000;
+$scene_01_end: $scene_01_begin + $scene_01_duration;
+
+$scene_02_begin: 2000;
+$scene_02_duration: 2000;
+$scene_02_end: $scene_02_begin + $scene_02_duration;
+
+$scene_03_begin: 4000;
+$scene_03_duration: 2000;
+$scene_03_end: $scene_03_begin + $scene_03_duration;
+
+
+/* Animations between Scenes */
+#scene-01-one { -skrollr-animation-name: scene-01; }
+#scene-02-two { -skrollr-animation-name: scene-02; }
+#scene-03-three { -skrollr-animation-name: scene-03; }
+
+@-skrollr-keyframes scene-01 {
+  #{$scene_01_begin} {
+    top: 0%;
+  }
+  #{$scene_01_end - 100} {
+    top: 0%;
+  }
+  #{$scene_01_end} {
+    top: -100%;
+  }
+}
+
+@-skrollr-keyframes scene-02 {
+  0 {
+    top: 100%;
+  }
+  #{$scene_02_begin - 100} {
+    top: 100%;
+  }
+  #{$scene_02_begin} {
+    top: 0%;
+  }
+  #{$scene_02_end - 100} {
+    top: 0%;
+  }
+  #{$scene_02_end} {
+    top: -100%;
+  }
+}
+
+@-skrollr-keyframes scene-03 {
+  0 {
+    top: 100%;
+  }
+  #{$scene_03_begin - 100} {
+    top: 100%;
+  }
+  #{$scene_03_begin} {
+    top: 0%;
+  }
+  #{$scene_03_end} {
+    top: 0%;
+  }
+}

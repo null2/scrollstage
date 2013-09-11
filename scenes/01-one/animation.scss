@@ -1,0 +1,14 @@
+/* Animations for Scene 01-one */
+
+#number-one {
+  -skrollr-animation-name: number-one;
+}
+
+@-skrollr-keyframes number-one {
+  #{$scene_01_begin} {
+    transform: rotate(0deg);
+  }
+  #{$scene_01_end} {
+    transform: rotate(360deg);
+  }
+}

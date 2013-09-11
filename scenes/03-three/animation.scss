@@ -1,0 +1,14 @@
+/* Animations for Scene 03-three */
+
+#number-three {
+  -skrollr-animation-name: number-three;
+}
+
+@-skrollr-keyframes number-three {
+  0 {
+    transform: rotate(0deg);
+  }
+  2000 {
+    transform: rotate(360deg);
+  }
+}
