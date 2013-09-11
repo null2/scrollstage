@@ -5,10 +5,10 @@
 }
 
 @-skrollr-keyframes number-three {
-  0 {
+  #{$scene_03_begin} {
     transform: rotate(0deg);
   }
-  2000 {
+  #{$scene_03_end} {
     transform: rotate(360deg);
   }
 }

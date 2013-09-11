@@ -35,5 +35,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', ['concat', 'sass', 'clean']);
 
-  grunt.registerTask('default', ['devserver']);
+  grunt.registerTask('default', ['build', 'devserver']);
 };

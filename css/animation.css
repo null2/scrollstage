@@ -14,7 +14,7 @@
   0 {
     top: 0%; }
 
-  1900 {
+  1500 {
     top: 0%; }
 
   2000 {
@@ -24,13 +24,13 @@
   0 {
     top: 100%; }
 
-  1900 {
+  1500 {
     top: 100%; }
 
   2000 {
     top: 0%; }
 
-  3900 {
+  3500 {
     top: 0%; }
 
   4000 {
@@ -40,7 +40,7 @@
   0 {
     top: 100%; }
 
-  3900 {
+  3500 {
     top: 100%; }
 
   4000 {
@@ -65,10 +65,10 @@
   -skrollr-animation-name: number-two; }
 
 @-skrollr-keyframes number-two {
-  0 {
+  2000 {
     transform: rotate(0deg); }
 
-  2000 {
+  4000 {
     transform: rotate(360deg); } }
 
 /* Animations for Scene 03-three */
@@ -76,8 +76,8 @@
   -skrollr-animation-name: number-three; }
 
 @-skrollr-keyframes number-three {
-  0 {
+  4000 {
     transform: rotate(0deg); }
 
-  2000 {
+  6000 {
     transform: rotate(360deg); } }

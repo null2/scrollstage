@@ -24,7 +24,7 @@ $scene_03_end: $scene_03_begin + $scene_03_duration;
   #{$scene_01_begin} {
     top: 0%;
   }
-  #{$scene_01_end - 100} {
+  #{$scene_01_end - 500} {
     top: 0%;
   }
   #{$scene_01_end} {
@@ -36,13 +36,13 @@ $scene_03_end: $scene_03_begin + $scene_03_duration;
   0 {
     top: 100%;
   }
-  #{$scene_02_begin - 100} {
+  #{$scene_02_begin - 500} {
     top: 100%;
   }
   #{$scene_02_begin} {
     top: 0%;
   }
-  #{$scene_02_end - 100} {
+  #{$scene_02_end - 500} {
     top: 0%;
   }
   #{$scene_02_end} {
@@ -54,7 +54,7 @@ $scene_03_end: $scene_03_begin + $scene_03_duration;
   0 {
     top: 100%;
   }
-  #{$scene_03_begin - 100} {
+  #{$scene_03_begin - 500} {
     top: 100%;
   }
   #{$scene_03_begin} {
