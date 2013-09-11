@@ -42,22 +42,30 @@
       success: function(data) {
         $element.html(data);
 
+        $('body').append($('<script/>', { src: 'scenes/' + name + '/animation.js' }));
+
         callback();
       }
     });
   }
 
+  main.scenes = {};
   main.init = function() {
     async.each($('[data-scene]'), loadScene, function(err) {
       resize();
 
-      $('body').append($('<script/>', { src: 'js/skrollr.stylesheets.min.js'}));
-      $('body').append($('<script/>', { src: 'js/skrollr.min.js'}));
-      $('body').append($('<script/>', { src: 'js/skrollr.menu.min.js'}));
-      $('body').append($('<script/>', { src: 'js/skrollr.ie.min.js'}));
+      $('body').append($('<script/>', { src: 'js/skrollr.stylesheets.min.js' }));
+      $('body').append($('<script/>', { src: 'js/skrollr.min.js' }));
+      $('body').append($('<script/>', { src: 'js/skrollr.menu.min.js' }));
+      $('body').append($('<script/>', { src: 'js/skrollr.ie.min.js' }));
 
       var s = skrollr.init({
-        render: function(w) {
+        render: function(obj) {
+          for (var name in main.scenes) {
+             if (typeof main.scenes[name].render === 'function') {
+               main.scenes[name].render(obj);
+             }
+          }
         }
       });
     });
